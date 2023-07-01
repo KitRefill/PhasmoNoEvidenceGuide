@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.ghost-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.ghost-row {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 10px;
+}
+
+.ghost-cell {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.ghost-cell h2 {
+    cursor: pointer;
+    margin: 0;
+}
+
+.ghost-cell button {
+    margin-top: 10px;
+}
+
+.ghost-cell h2.strikethrough {
+    text-decoration: line-through;
+}
+
+.ghost-cell h2.underline {
+    text-decoration: underline;
+}
+
+.ghost-cell h2.circle {
+    border: 2px solid #000;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.ghost-cell h2:hover {
+    background-color: #eee;
+}

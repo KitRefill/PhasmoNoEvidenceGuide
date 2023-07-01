@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phasmophobia Ghost Guide</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 60%;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Zero Evidence Run Guide - Phasmophobia Ghosts</h1>
+    </header>
+
+    <main>
+        <div class="ghost-grid">
+            <div class="ghost-cell">
+                <h2 onclick="toggleGhostStatus(this)">Spirit</h2>
+                <button onclick="showGhostTips('spirit')">Click here for ghost tips</button>
+            </div>
+            <div class="ghost-cell">
+                <h2 onclick="toggleGhostStatus(this)">Wraith</h2>
+                <button onclick="showGhostTips('wraith')">Click here for ghost tips</button>
+            </div>
+            <div class="ghost-cell">
+                <h2 onclick="toggleGhostStatus(this)">Phantom</h2>
+                <button onclick="showGhostTips('phantom')">Click here for ghost tips</button>
+            </div>
+            <div class="ghost-cell">
+                <h2 onclick="toggleGhostStatus(this)">Poltergeist</h2>
+                <button onclick="showGhostTips('poltergeist')">Click here for ghost tips</button>
+            </div>
+            <div class="ghost-cell">
+                <h2 onclick="toggleGhostStatus(this)">Banshee</h2>
+                <button onclick="showGhostTips('banshee')">Click here for ghost tips</button>
+            </div>
+            <div class="ghost-cell">
+                <h2 onclick="toggleGhostStatus(this)">Jinn</h2>
+                <button onclick="showGhostTips('jinn')">Click here for ghost tips</button>
+            </div>
+            <div class="ghost-cell">
+                <h2 onclick="toggleGhostStatus(this)">Mare</h2>
+                <button onclick="showGhostTips('mare')">Click here for ghost tips</button>
+            </div>
+            <div class="ghost-cell">
+                <h2 onclick="toggleGhostStatus(this)">Revenant</h2>
+                <button onclick="showGhostTips('revenant')">Click here for ghost tips</button>
+            </div>
+            <div class="ghost-cell">
+                <h2 onclick="toggleGhostStatus(this)">Shade</h2>
+                <button onclick="showGhostTips('shade')">Click here for ghost tips</button>
+            </div>
+            <div class="ghost-cell">
+                <h2 onclick="toggleGhostStatus(this)">Demon</h2>
+                <button onclick="showGhostTips('demon')">Click here for ghost tips</button>
+            </div>
+            <div class="ghost-cell">
+                <h2 onclick="toggleGhostStatus(this)">Yurei</h2>
+                <button onclick="showGhostTips('yurei')">Click here for ghost tips</button>
+            </div>
+            <div class="ghost-cell">
+                <h2 onclick="toggleGhostStatus(this)">Oni</h2>
+                <button onclick="showGhostTips('oni')">Click here for ghost tips</button>
+            </div>
+            <div class="ghost-cell">
+                <h2 onclick="toggleGhostStatus(this)">Yokai</h2>
+                <button onclick="showGhostTips('yokai')">Click here for ghost tips</button>
+            </div>
+            <div class="ghost-cell">
+                <h2 onclick="toggleGhostStatus(this)">Hantu</h2>
+                <button onclick="showGhostTips('hantu')">Click here for ghost tips</button>
+            </div>
+            <div class="ghost-cell">
+                <h2 onclick="toggleGhostStatus(this)">Goryo</h2>
+                <button onclick="showGhostTips('goryo')">Click here for ghost tips</button>
+            </div>
+            <div class="ghost-cell">
+                <h2 onclick="toggleGhostStatus(this)">Myling</h2>
+                <button onclick="showGhostTips('myling')">Click here for ghost tips</button>
+            </div>
+            <div class="ghost-cell">
+                <h2 onclick="toggleGhostStatus(this)">Onryo</h2>
+                <button onclick="showGhostTips('onryo')">Click here for ghost tips</button>
+            </div>
+            <div class="ghost-cell">
+                <h2 onclick="toggleGhostStatus(this)">The Twins</h2>
+                <button onclick="showGhostTips('twins')">Click here for ghost tips</button>
+            </div>
+            <div class="ghost-cell">
+                <h2 onclick="toggleGhostStatus(this)">Raiju</h2>
+                <button onclick="showGhostTips('raiju')">Click here for ghost tips</button>
+            </div>
+            <div class="ghost-cell">
+                <h2 onclick="toggleGhostStatus(this)">Obake</h2>
+                <button onclick="showGhostTips('obake')">Click here for ghost tips</button>
+            </div>
+            <div class="ghost-cell">
+                <h2 onclick="toggleGhostStatus(this)">The Mimic</h2>
+                <button onclick="showGhostTips('mimic')">Click here for ghost tips</button>
+            </div>
+            <div class="ghost-cell">
+                <h2 onclick="toggleGhostStatus(this)">Moroi</h2>
+                <button onclick="showGhostTips('moroi')">Click here for ghost tips</button>
+            </div>
+            <div class="ghost-cell">
+                <h2 onclick="toggleGhostStatus(this)">Deogen</h2>
+                <button onclick="showGhostTips('deogen')">Click here for ghost tips</button>
+            </div>
+            <div class="ghost-cell">
+                <h2 onclick="toggleGhostStatus(this)">Thaye</h2>
+                <button onclick="showGhostTips('thaye')">Click here for ghost tips</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Phasmophobia Ghost Guide &copy; 2023</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="ghostTitle"></h2>
+            <p id="ghostInfo"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
